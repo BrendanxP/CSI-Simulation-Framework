@@ -1,0 +1,520 @@
+<?xml version="1.0"?>
+<sdf version='1.7'>
+  <model name='nexus_4wd_mecanum'>
+    <link name='base_footprint'>
+      <inertial>
+        <pose>-0.010238 -0 0.051856 0 -0 0</pose>
+        <mass>3.064</mass>
+        <inertia>
+          <ixx>0.0220853</ixx>
+          <ixy>8.88007e-21</ixy>
+          <ixz>-9.70143e-05</ixz>
+          <iyy>0.0623492</iyy>
+          <iyz>2.15311e-20</iyz>
+          <izz>0.0824412</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
+        <pose>0 0 0.05 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/nexus_base_link_collision.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__lower_left_wheel_shaft_collision_1'>
+        <pose>-0.15 0.108 0.05 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/wheel_shaft.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__lower_right_wheel_shaft_collision_2'>
+        <pose>-0.15 -0.108 0.05 3.14159 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/wheel_shaft.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__upper_left_wheel_shaft_collision_3'>
+        <pose>0.15 0.108 0.05 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/wheel_shaft.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__upper_right_wheel_shaft_collision_4'>
+        <pose>0.15 -0.108 0.05 3.14159 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/wheel_shaft.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_footprint_fixed_joint_lump__base_link_visual'>
+        <pose>0 0 0.05 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/nexus_base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__front_sensor_visual_1'>
+        <pose>0.205 0 0.06 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/urm04.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__left_sensor_visual_2'>
+        <pose>0 0.108 0.06 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/urm04.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__lower_left_wheel_shaft_visual_3'>
+        <pose>-0.15 0.108 0.05 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/wheel_shaft.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__lower_right_wheel_shaft_visual_4'>
+        <pose>-0.15 -0.108 0.05 3.14159 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/wheel_shaft.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__rear_sensor_visual_5'>
+        <pose>-0.201 0 0.06 1.5708 -0 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/urm04.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__right_sensor_visual_6'>
+        <pose>0 -0.108 0.06 1.5708 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/urm04.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__upper_left_wheel_shaft_visual_7'>
+        <pose>0.15 0.108 0.05 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/wheel_shaft.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__upper_right_wheel_shaft_visual_8'>
+        <pose>0.15 -0.108 0.05 3.14159 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/wheel_shaft.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+    <joint name='lower_left_wheel_joint' type='revolute'>
+      <pose relative_to='base_footprint'>-0.15 0.15 0.05 0 -0 0</pose>
+      <parent>base_footprint</parent>
+      <child>lower_left_wheel</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='lower_left_wheel'>
+      <pose relative_to='lower_left_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.3844</mass>
+        <inertia>
+          <ixx>0.000324824</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00048</iyy>
+          <iyz>0</iyz>
+          <izz>0.000324824</izz>
+        </inertia>
+      </inertial>
+      <collision name='lower_left_wheel_collision'>
+        <pose>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.0505</length>
+            <radius>0.05</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0</mu>
+              <mu2>0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='lower_left_wheel_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/mecanum_wheel_right.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='lower_right_wheel_joint' type='revolute'>
+      <pose relative_to='base_footprint'>-0.15 -0.15 0.05 3.14159 -0 0</pose>
+      <parent>base_footprint</parent>
+      <child>lower_right_wheel</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='lower_right_wheel'>
+      <pose relative_to='lower_right_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.3844</mass>
+        <inertia>
+          <ixx>0.000324824</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00048</iyy>
+          <iyz>0</iyz>
+          <izz>0.000324824</izz>
+        </inertia>
+      </inertial>
+      <collision name='lower_right_wheel_collision'>
+        <pose>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.0505</length>
+            <radius>0.05</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0</mu>
+              <mu2>0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='lower_right_wheel_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/mecanum_wheel_left.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='upper_left_wheel_joint' type='revolute'>
+      <pose relative_to='base_footprint'>0.15 0.15 0.05 0 -0 0</pose>
+      <parent>base_footprint</parent>
+      <child>upper_left_wheel</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='upper_left_wheel'>
+      <pose relative_to='upper_left_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.3844</mass>
+        <inertia>
+          <ixx>0.000324824</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00048</iyy>
+          <iyz>0</iyz>
+          <izz>0.000324824</izz>
+        </inertia>
+      </inertial>
+      <collision name='upper_left_wheel_collision'>
+        <pose>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.0505</length>
+            <radius>0.05</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0</mu>
+              <mu2>0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='upper_left_wheel_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/mecanum_wheel_left.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='upper_right_wheel_joint' type='revolute'>
+      <pose relative_to='base_footprint'>0.15 -0.15 0.05 3.14159 -0 0</pose>
+      <parent>base_footprint</parent>
+      <child>upper_right_wheel</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='upper_right_wheel'>
+      <pose relative_to='upper_right_wheel_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.3844</mass>
+        <inertia>
+          <ixx>0.000324824</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00048</iyy>
+          <iyz>0</iyz>
+          <izz>0.000324824</izz>
+        </inertia>
+      </inertial>
+      <collision name='upper_right_wheel_collision'>
+        <pose>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.0505</length>
+            <radius>0.05</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0</mu>
+              <mu2>0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='upper_right_wheel_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>/home/alex/catkin_ws/src/nexus_4wd_mecanum_description/meshes/mecanum_wheel_right.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <static>0</static>
+    <plugin name='nexus_ros_force_based_move' filename='libnexus_ros_force_based_move.so'>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <odometryRate>25.0</odometryRate>
+      <robotBaseFrame>base_footprint</robotBaseFrame>
+      <cmdVelTimeOut>0.25</cmdVelTimeOut>
+      <publishOdometryTf>0</publishOdometryTf>
+      <yaw_velocity_p_gain>1.0</yaw_velocity_p_gain>
+      <x_velocity_p_gain>15.0</x_velocity_p_gain>
+      <y_velocity_p_gain>15.0</y_velocity_p_gain>
+      <max_x_velocity>0.6</max_x_velocity>
+      <max_y_velocity>0.6</max_y_velocity>
+      <max_yaw_velocity>0.5</max_yaw_velocity>
+    </plugin>
+  </model>
+</sdf>
